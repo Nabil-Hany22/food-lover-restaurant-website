@@ -15,11 +15,11 @@ This project is called **Food Lover**, and it demonstrates the use of **HTML & C
 ---
 
 ## 📂 Project Structure
-food-lover-restaurant-website/
-┣ 📜 index.html   # Main HTML file
-┣ 📜 style.css    # Stylesheet (CSS Flexbox)
-┣ 📂 images/      # Project images (avatars, backgrounds, favicon)
-┗ 📜 README.md    # Project documentation
+┣ 📂 images/      # Project images (avatars, backgrounds, favicon)  
+┣ 📂 design/      # Design preview images (desktop & mobile)  
+┣ 📜 style.css    # Stylesheet  
+┣ 📜 index.html   # Main HTML file  
+┗ 📜 README.md    # Project documentation  
 
 ---
 
