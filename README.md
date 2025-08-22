@@ -16,11 +16,10 @@ This project is called **Food Lover**, and it demonstrates the use of **HTML & C
 
 ## 📂 Project Structure
 food-lover-restaurant-website/
-├── index.html
-├── style.css
-├── images/
-└── README.md
-
+┣ 📜 index.html   # Main HTML file
+┣ 📜 style.css    # Stylesheet (CSS Flexbox)
+┣ 📂 images/      # Project images (avatars, backgrounds, favicon)
+┗ 📜 README.md    # Project documentation
 
 ---
 
