@@ -44,5 +44,10 @@ Check out the live version of this project here:
 
 ---
 
+## 👨‍💻 Author
+- LinkedIn - [Nabil El Amrawy](https://www.linkedin.com/in/nabil-el-amrawy/)  
+- GitHub - [Nabil-Hany22](https://github.com/Nabil-Hany22)  
+
+---
 ## 🙌 Acknowledgments
 - Inspired by [Mohamed Elkashef’s Food Lover tutorial](https://www.youtube.com/watch?v=hE0azYXN_W0&t=15s&ab_channel=MohamedElkashef).  
