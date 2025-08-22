@@ -1,490 +1,565 @@
 /* Preparation Start */
 :root {
-    /* colors */
-    --primary-text-color: #e4b95b;
-    --secondary-text-color: #383848;
-    --third-text-color: #9a9a9a;
+  /* colors */
+  --primary-text-color: #e4b95b;
+  --secondary-text-color: #383848;
+  --third-text-color: #9a9a9a;
 
-  
-    --black-color: hsl(0, 0%, 7%);
+  --black-color: hsl(0, 0%, 7%);
 
-    --White-color: hsl(0, 0%, 100%);
-  }
-  
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-
-  html{
-      /* font-size: 16px; */
-      scroll-behavior: smooth;
-  }
-
-  body {
-    font-family: "Quicksand", sans-serif;
-    line-height: 1.3;
-  }
-
-  /* Preparation End */
-  
-/* Utlites Classes Start */
-.primary-text{
-    color: var(--primary-text-color);
+  --White-color: hsl(0, 0%, 100%);
 }
 
-ul{
-    list-style: none;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* font-size: 16px; */
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+  line-height: 1.3;
+}
+
+/* Preparation End */
+
+/* Utlites Classes Start */
+.primary-text {
+  color: var(--primary-text-color);
+}
+
+ul {
+  list-style: none;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
-a , a:visited , a:hover{
-    color: var(--White-color);
+a,
+a:visited,
+a:hover {
+  color: var(--White-color);
 }
 
-.btn{
-    display: inline-block;
-    padding: 15px 30px;
-    border: none;
-    border-radius: 15px;
+.btn {
+  display: inline-block;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 15px;
 }
 
-.btn-primary{
-    color: var(--White-color);
-    border:1px solid var(--White-color);
-    transition: background-color 0.3s ease;
+.btn-primary {
+  color: var(--White-color);
+  border: 1px solid var(--White-color);
+  transition: background-color 0.3s ease;
 }
 
-.btn-secondary{
-    color: var(--White-color);
-    background-color: var(--secondary-text-color);
-    margin-top: 2rem;
-    transition: background-color 0.3s ease;
+.btn-secondary {
+  color: var(--White-color);
+  background-color: var(--secondary-text-color);
+  margin-top: 2rem;
+  transition: background-color 0.3s ease;
 }
 
-.btn-primary:hover , .btn-secondary:hover {
-    background-color: var(--primary-text-color);
+.btn-primary:hover,
+.btn-secondary:hover {
+  background-color: var(--primary-text-color);
 }
-
-
 
 /* Utlites Classes End */
 
-
 /* Header Start */
 
-header{
-    height: 100vh;
-    background: url('images/home_bg.jpeg') center center/cover no-repeat;
+header {
+  height: 100vh;
+  background: url("images/home_bg.jpeg") center center/cover no-repeat;
 }
 
-header #navbar{
-display: flex;
-justify-content: space-between;
-align-items: center;
-height: 100px;
-width: 100%;
+header #navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  width: 100%;
 }
 
-header #navbar img{
-    width: 80px;
-    margin-left: 100px;
+header #navbar img {
+  width: 80px;
+  margin-left: 100px;
 }
 header #navbar ul {
-    display: flex;
-    margin-right: 100px;
+  display: flex;
+  margin-right: 100px;
 }
 
-header #navbar ul li a{
-    padding: 15px 20px;
-    transition: background-color 0.3s ease;
-    font-weight: 600;
+header #navbar ul li a {
+  padding: 15px 20px;
+  transition: background-color 0.3s ease;
+  font-weight: 600;
 }
 
-header #navbar ul li a:hover{
-    border-bottom: 2px solid var(--primary-text-color);
+header #navbar ul li a:hover {
+  border-bottom: 2px solid var(--primary-text-color);
 }
 
-header .content{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 75%;
+header .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 75%;
 }
 
-header .content h1{
-    font-size: 40px;
-    color: var(--White-color);
+header .content h1 {
+  font-size: 40px;
+  color: var(--White-color);
 }
 
 header .content p {
-    margin: 20px 0 40px ;
-    color: var(--White-color);
+  margin: 20px 0 40px;
+  color: var(--White-color);
 }
 
-header::before{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgb(0, 0, 0, 0.6);
-
+header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(0, 0, 0, 0.6);
 }
 
 header * {
-    z-index: 10;
+  z-index: 10;
 }
 
 /* Header End */
 
-.container{
-    max-width: 1100px;
-    margin: auto;
+.container {
+  max-width: 1100px;
+  margin: auto;
 }
 /* About Start */
 
-#about{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 80vh;
-    background-color: #f4f4f4;
-    
+#about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  background-color: #f4f4f4;
 }
 
-#about .title ,
+#about .title,
 #offers .title,
-#menu .title{
-    text-align: center;
-    margin-bottom: 4rem;
+#menu .title {
+  text-align: center;
+  margin-bottom: 4rem;
 }
 
-#about h2 ,
+#about h2,
 #offers h2,
 #menu h2,
-#gallery h2{
-    font-size: 40px;
-    margin-bottom: 20px;
+#gallery h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
 }
 
-#about h2 ,#menu h2 {
-    color: var(--secondary-text-color);
+#about h2,
+#menu h2 {
+  color: var(--secondary-text-color);
 }
 
 #about .title p,
-#menu .title p{
-    font-size: 14px;
-    color: var(--third-text-color);
-    font-weight: 600;
+#menu .title p {
+  font-size: 14px;
+  color: var(--third-text-color);
+  font-weight: 600;
 }
 
-#about .about-content{
-    display: flex;
-    justify-content: space-between;
+#about .about-content {
+  display: flex;
+  justify-content: space-between;
 }
 
-#about .about-content img{
-    width: 450px ;
+#about .about-content img {
+  width: 450px;
 }
 
 #about .about-content p {
-    color: var(--third-text-color);
-    margin-right: 7rem;
-    line-height: 1.6;
-    font-weight: 500;
+  color: var(--third-text-color);
+  margin-right: 7rem;
+  line-height: 1.6;
+  font-weight: 500;
 }
 
 /* About End */
 
 /* Offers Start */
 
-#offers{
-    height: 80vh;
-    display: flex;
-    justify-content: center;
-    background: url('images/offer-background.jpg') center center/cover fixed ;
+#offers {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  background: url("images/offer-background.jpg") center center/cover fixed;
 }
 
-#offers h2{
-    color: var(--primary-text-color);
+#offers h2 {
+  color: var(--primary-text-color);
 }
 
-#offers .title{
-    color:var(--White-color);
-    font-weight: 500;
+#offers .title {
+  color: var(--White-color);
+  font-weight: 500;
 }
 
-#offers .offers-items{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    text-align: center;
+#offers .offers-items {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
 }
-#offers .offers-items img{
-    width: 200px;
-}
-
-#offers .offers-items h3{
-    font-size: 25px;
-    margin: 15px 0;
-    color: var(--White-color);
+#offers .offers-items img {
+  width: 200px;
 }
 
-#offers .offers-items p{
-    font-size: 14px;
-    padding: 0 20px;
-    font-weight: 300;
-    margin-bottom: 15px;
-    color: var(--White-color);
+#offers .offers-items h3 {
+  font-size: 25px;
+  margin: 15px 0;
+  color: var(--White-color);
 }
 
-#offers .offers-items span{
-    font-size: 18px;
-    font-weight: 600;
-    margin-left: 5px;
+#offers .offers-items p {
+  font-size: 14px;
+  padding: 0 20px;
+  font-weight: 300;
+  margin-bottom: 15px;
+  color: var(--White-color);
+}
+
+#offers .offers-items span {
+  font-size: 18px;
+  font-weight: 600;
+  margin-left: 5px;
 }
 
 /* Offers End */
 
 /* Menu Start */
 #menu {
-    background: #f4f2ed;
-    padding:5rem 0;
-    
+  background: #f4f2ed;
+  padding: 5rem 0;
 }
 
-#menu .menu-items{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#menu .menu-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-#menu .menu-items .menu-item{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 40px;
+#menu .menu-items .menu-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px;
 }
 
-#menu .menu-items .menu-item img{
-    width: 80px;
-    border-radius: 50%;
-    margin-right: 20px;
+#menu .menu-items .menu-item img {
+  width: 80px;
+  border-radius: 50%;
+  margin-right: 20px;
 }
 
-#menu .menu-items .menu-item h3{
-    color: var(--secondary-text-color);
-    border-bottom: 1px dashed var(--third-text-color);
-    padding-bottom: 10px;
-    margin-bottom: 10px;
-    position: relative;
+#menu .menu-items .menu-item h3 {
+  color: var(--secondary-text-color);
+  border-bottom: 1px dashed var(--third-text-color);
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  position: relative;
 }
 
-#menu .menu-items .menu-item span{
-    position: absolute;
-    top: 0;
-    right: 0;
+#menu .menu-items .menu-item span {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
-#menu .btn{
-    display: block;
-    background-color: var(--primary-text-color);
-    color: var(--White-color);
-    font-weight: 500;
-    text-align: center;
-    margin:20px auto 0;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-
+#menu .btn {
+  display: block;
+  background-color: var(--primary-text-color);
+  color: var(--White-color);
+  font-weight: 500;
+  text-align: center;
+  margin: 20px auto 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-#menu .btn:hover{
-    background: var(--secondary-text-color);
+#menu .btn:hover {
+  background: var(--secondary-text-color);
 }
 
 /* Menu End */
 
 /* Daytime Start */
 
-#daytime{
-    background: url('images/daytime_bg.jpeg') center center/cover fixed no-repeat;
-    color: var(--White-color);
-    text-align: center;
+#daytime {
+  background: url("images/daytime_bg.jpeg") center center/cover fixed no-repeat;
+  color: var(--White-color);
+  text-align: center;
 }
 
-#daytime .daytime-items{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 40vh;
+#daytime .daytime-items {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 40vh;
 }
 
-#daytime .daytime-items h3{
-    font-size: 32px;
-    margin: 20px 0 10px;
+#daytime .daytime-items h3 {
+  font-size: 32px;
+  margin: 20px 0 10px;
 }
 
-#daytime .daytime-items p{
-    font-weight: 500 ;
+#daytime .daytime-items p {
+  font-weight: 500;
 }
 
 /* Daytime End */
 
 /* Gallery Start */
-#gallery{
-    background: url('images/offer-background.jpg') center center/cover no-repeat;
-    padding: 8rem 0 6rem;
+#gallery {
+  background: url("images/offer-background.jpg") center center/cover no-repeat;
+  padding: 8rem 0 6rem;
 }
 
-#gallery h2{
-    text-align: center;
-    color: var(--White-color);
+#gallery h2 {
+  text-align: center;
+  color: var(--White-color);
 }
 
-#gallery .img-gallery{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+#gallery .img-gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
-#gallery .img-gallery img{
-    width: 280px;
-    border-radius: 15px;
-    margin: 20px;
-    opacity: 0.8;
+#gallery .img-gallery img {
+  width: 280px;
+  border-radius: 15px;
+  margin: 20px;
+  opacity: 0.8;
 }
 
-#gallery .img-gallery img:hover{
-    opacity: 1;
-    cursor: pointer;
+#gallery .img-gallery img:hover {
+  opacity: 1;
+  cursor: pointer;
 }
 /* Gallery End */
 
 /* Contact Start */
 
-#contact{
-    padding: 5rem 0;
-    background:#f4f2ed ;
+#contact {
+  padding: 5rem 0;
+  background: #f4f2ed;
 }
 
-#contact .container{
-    max-width: 900px;
+#contact .container {
+  max-width: 900px;
 }
 
-#contact .contact-content{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+#contact .contact-content {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
-#contact .contact-content .contact-info{
-    width: 50%;
+#contact .contact-content .contact-info {
+  width: 50%;
 }
 
-#contact .contact-content .contact-info div{
-    margin: 30px 0;
-    line-height: 1.7;
+#contact .contact-content .contact-info div {
+  margin: 30px 0;
+  line-height: 1.7;
 }
 
-#contact .contact-content .contact-info h3{
-    font-size: 28px;
-    color: var(--secondary-text-color);
-    margin-bottom: 10px;
+#contact .contact-content .contact-info h3 {
+  font-size: 28px;
+  color: var(--secondary-text-color);
+  margin-bottom: 10px;
 }
 
-#contact .contact-content .contact-info p{
-    color: var(--third-text-color);
+#contact .contact-content .contact-info p {
+  color: var(--third-text-color);
 }
 
-#contact .contact-content .contact-info i{
-    color: var(--primary-text-color);
-    margin-right: 5px;
+#contact .contact-content .contact-info i {
+  color: var(--primary-text-color);
+  margin-right: 5px;
 }
-#contact .contact-content .contact-info a i{
-    font-size: 20px;
-    text-align: center;
-    color: var(--White-color);
-    background-color: var(--secondary-text-color);
-    padding: 15px 30px;
-    /* border-radius: 50%; */
-}
-
-#contact .contact-content .contact-info a i:hover{
-    cursor: pointer;
-    color: var(--secondary-text-color);
-    background-color: var(--primary-text-color);
-    
+#contact .contact-content .contact-info a i {
+  font-size: 20px;
+  text-align: center;
+  color: var(--White-color);
+  background-color: var(--secondary-text-color);
+  padding: 15px 30px;
+  /* border-radius: 50%; */
 }
 
-form{
-    width: 50%;
+#contact .contact-content .contact-info a i:hover {
+  cursor: pointer;
+  color: var(--secondary-text-color);
+  background-color: var(--primary-text-color);
+}
+
+form {
+  width: 50%;
 }
 
 form input,
-textarea{
-    display: block;
-    width: 100%;
-    padding: 10px 15px;
-    margin: 20px 0;
-    border: none;
-    background-color: #e3e2dd;
+textarea {
+  display: block;
+  width: 100%;
+  padding: 10px 15px;
+  margin: 20px 0;
+  border: none;
+  background-color: #e3e2dd;
 }
 
-#contact .btn{
-    background-color: var(--primary-text-color);
-    color: var(--White-color);
+#contact .btn {
+  background-color: var(--primary-text-color);
+  color: var(--White-color);
 }
 
-#contact .btn:hover{
-    background-color: var(--secondary-text-color);
-    cursor: pointer;
+#contact .btn:hover {
+  background-color: var(--secondary-text-color);
+  cursor: pointer;
 }
 /* Contact End */
 
 /* Footer Start */
 
-#footer{
-    background-color: var(--secondary-text-color);
-    color: var(--White-color);
-    text-align: center;
-    padding: 15px 0;
-    font-size: 14px;
+#footer {
+  background-color: var(--secondary-text-color);
+  color: var(--White-color);
+  text-align: center;
+  padding: 15px 0;
+  font-size: 14px;
 }
-
 
 /* Footer End */
 
+/* Responsiveness */
+/* Medium Screen + Tablet */
+@media (max-width: 1000px) {
+  #navbar img {
+    margin-left: 20px;
+  }
 
+  nav ul {
+    margin-right: 20px;
+  }
 
+  nav ul li a {
+    padding: 10px;
+  }
 
+  header .content h1 {
+    font-size: 28px;
+  }
 
+  #about {
+    height: auto;
+    padding: 4rem 2rem;
+  }
 
+  #about .about-content p {
+    margin-right: 2rem;
+  }
 
+  #about img {
+    width: 250px;
+  }
 
+  #offers .offers-items img {
+    width: 150px;
+  }
 
+  #offers .offers-items h3 {
+    font-size: 18px;
+  }
 
+  #menu .menu-items {
+    display: block;
+  }
 
+  #contact .contact-content {
+    flex-direction: column;
+  }
 
+  /* Mobile Devices */
+  @media (max-width: 600px) {
+    #navbar {
+      flex-direction: column;
+    }
 
+    #navbar img {
+      margin-bottom: 20px;
+    }
 
+    header .content h1 {
+      font-size: 18px;
+    }
 
+    header .content p {
+      font-size: 14px;
+    }
 
+    #about .about-content {
+      flex-direction: column;
+    }
 
+    #about .about-content a {
+      margin: 2rem 0;
+    }
 
+    #about img {
+      display: none;
+    }
 
+    #offers {
+      height: auto;
+      padding: 30px 10px;
+    }
 
+    #offers .offers-items {
+      flex-direction: column;
+    }
 
+    #menu .menu-items .menu-item {
+      margin: 20px 10px;
+    }
 
+    #daytime .daytime-items {
+      display: block;
+      height: auto;
+      padding: 30px 0;
+    }
 
+    #daytime .daytime-items .daytime-item {
+      margin-top: 20px;
+    }
 
-
-
-
+    #contact .contact-info,
+    form {
+      width: 80%;
+    }
+  }
+}
