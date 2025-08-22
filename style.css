@@ -2,7 +2,8 @@
 :root {
     /* colors */
     --primary-text-color: #e4b95b;
-    --secondary-text-color: ;
+    --secondary-text-color: #383848;
+    --third-text-color: #9a9a9a;
 
   
     --black-color: hsl(0, 0%, 7%);
@@ -23,7 +24,6 @@
   body {
     font-family: "Quicksand", sans-serif;
     line-height: 1.3;
-    /* font-size: 13px; */
   }
 
   /* Preparation End */
@@ -58,9 +58,18 @@ a , a:visited , a:hover{
     transition: background-color 0.3s ease;
 }
 
-.btn-primary:hover {
+.btn-secondary{
+    color: var(--White-color);
+    background-color: var(--secondary-text-color);
+    margin-top: 2rem;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover , .btn-secondary:hover {
     background-color: var(--primary-text-color);
 }
+
+
 
 /* Utlites Classes End */
 
@@ -76,7 +85,8 @@ header .navbar{
 display: flex;
 justify-content: space-between;
 align-items: center;
-
+height: 100px;
+width: 100%;
 }
 
 header .navbar img{
@@ -89,8 +99,9 @@ header .navbar ul {
 }
 
 header .navbar ul li a{
-    padding: 15px;
+    padding: 15px 20px;
     transition: background-color 0.3s ease;
+    font-weight: 600;
 }
 
 header .navbar ul li a:hover{
@@ -131,3 +142,63 @@ header * {
 }
 
 /* Header End */
+
+/* About Start */
+.container{
+    max-width: 1100px;
+    margin: auto;
+}
+
+#about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background-color: #f4f4f4;
+    
+}
+
+#about .title {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+#about h2 {
+    font-size: 40px;
+    color: var(--secondary-text-color);
+    margin-bottom: 20px;
+}
+
+#about .title p{
+    font-size: 14px;
+    color: var(--third-text-color);
+    font-weight: 600;
+}
+
+#about .about-content{
+    display: flex;
+    justify-content: space-between;
+}
+
+#about .about-content img{
+    width: 450px ;
+}
+
+#about .about-content p {
+    color: var(--third-text-color);
+    margin-right: 7rem;
+    line-height: 1.6;
+    font-weight: 500;
+}
+
+
+/* About End */
+
+
+
+
+
+
+
+
+
