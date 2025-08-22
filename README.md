@@ -34,7 +34,7 @@ This project is called **Food Lover**, and it demonstrates the use of **HTML & C
 
 ## 🌐 Live Demo
 Check out the live version of this project here:  
-👉 [Food Lover Live Demo](https://Nabil-Hany22.github.io/food-lover-restaurant-website/)
+👉 [Food Lover Live Demo](https://nabil-hany22.github.io/food-lover-restaurant-website/index.html)
 
 ---
 
