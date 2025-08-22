@@ -307,12 +307,51 @@ header * {
     background: var(--secondary-text-color);
 }
 
-
-
-
-
-
 /* Menu End */
+
+/* Daytime Start */
+
+#daytime{
+    background: url('images/daytime_bg.jpeg') center center/cover fixed no-repeat;
+    color: var(--White-color);
+    text-align: center;
+}
+
+#daytime .daytime-items{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 40vh;
+}
+
+#daytime .daytime-items h3{
+    font-size: 32px;
+    margin: 20px 0 10px;
+}
+
+#daytime .daytime-items p{
+    font-weight: 500 ;
+}
+
+
+
+
+
+
+
+/* Daytime End */
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
