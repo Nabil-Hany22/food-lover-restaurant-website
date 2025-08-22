@@ -17,9 +17,10 @@
     box-sizing: border-box;
   }
 
-  /* html{
-      font-size: 16px;
-  } */
+  html{
+      /* font-size: 16px; */
+      scroll-behavior: smooth;
+  }
 
   body {
     font-family: "Quicksand", sans-serif;
@@ -447,6 +448,19 @@ textarea{
     cursor: pointer;
 }
 /* Contact End */
+
+/* Footer Start */
+
+#footer{
+    background-color: var(--secondary-text-color);
+    color: var(--White-color);
+    text-align: center;
+    padding: 15px 0;
+    font-size: 14px;
+}
+
+
+/* Footer End */
 
 
 
