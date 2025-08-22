@@ -167,7 +167,8 @@ header * {
 
 #about h2 ,
 #offers h2,
-#menu h2{
+#menu h2,
+#gallery h2{
     font-size: 40px;
     margin-bottom: 20px;
 }
@@ -333,15 +334,38 @@ header * {
     font-weight: 500 ;
 }
 
-
-
-
-
-
-
 /* Daytime End */
 
+/* Gallery Start */
+#gallery{
+    background: url('images/offer-background.jpg') center center/cover no-repeat;
+    padding: 8rem 0 6rem;
+}
 
+#gallery h2{
+    text-align: center;
+    color: var(--White-color);
+}
+
+#gallery .img-gallery{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#gallery .img-gallery img{
+    width: 280px;
+    border-radius: 15px;
+    margin: 20px;
+    opacity: 0.8;
+}
+
+#gallery .img-gallery img:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+/* Gallery End */
 
 
 
